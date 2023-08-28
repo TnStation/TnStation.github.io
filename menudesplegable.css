@@ -1,0 +1,78 @@
+.submenu {
+    display: none;
+    width: calc(20%);
+    position: absolute;
+    top: calc(100%);
+    left: calc(35%);
+    background-color: #b8b8b8;
+    opacity: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    transition: opacity 0.2s ease; /* Agregar una animación de desvanecimiento */
+  }
+
+  .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 20px; /* Añadir espacio entre el texto y los bordes del submenu */
+    transition: background-color 0.01s ease; /* Añadir transición de fondo para una animación suave */
+  }
+  
+  .submenu a:hover {
+    color: rgb(255, 255, 255); /* Color de texto cuando se pasa el cursor sobre las opciones del submenu */
+    background-color: #000000; /* Color de fondo cuando se pasa el cursor sobre las opciones del submenu */
+  }
+
+  .header-text.active .submenu {
+    display: block;
+    opacity: 1; /* Hacer el menú visible con animación de desvanecimiento */
+    pointer-events: auto; /* Permitir interacciones con el menú visible */
+}
+
+.header-text.active .submenu-tincho,
+.header-text.active .submenu-comunidad {
+  display: block;
+  opacity: 1; /* Hacer el menú visible con animación de desvanecimiento */
+  pointer-events: auto; /* Permitir interacciones con el menú visible */
+}
+
+.submenus {
+  display: none;
+  width: calc(33%);
+  position: absolute;
+  top: calc(100%);
+  left: calc(62.3%); /* Colocar el menú justo debajo del enlace TINCHO */
+  background-color: #b8b8b8;
+  opacity: 1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  transition: opacity 0.2s ease; /* Agregar una animación de desvanecimiento */
+}
+
+.submenus a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 1px; /* Añadir espacio entre el texto y los bordes del submenu */
+  transition: background-color 0.01s ease; /* Añadir transición de fondo para una animación suave */
+}
+
+.submenus a:hover {
+  color: rgb(255, 255, 255); /* Color de texto cuando se pasa el cursor sobre las opciones del submenu */
+  background-color: #000000; /* Color de fondo cuando se pasa el cursor sobre las opciones del submenu */
+}
+
+.header-text.active .submenus {
+  display: block;
+  opacity: 1; /* Hacer el menú visible con animación de desvanecimiento */
+  pointer-events: auto; /* Permitir interacciones con el menú visible */
+}
+
+.header-text.active .submenus {
+display: block;
+opacity: 1; /* Hacer el menú visible con animación de desvanecimiento */
+pointer-events: auto; /* Permitir interacciones con el menú visible */
+}

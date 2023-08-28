@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Nights At Freddy Pack 1al4</title>
+    <link rel="icon" href="Imagenes\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../common-styles.css">
+    <link rel="stylesheet" href="../../menudesplegable.css">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 3100px;
+            width: 900px;
+            z-index: 999;
+        }
+
+        .headtittle{
+        font-family: "fuentedefault";
+        position: absolute;
+        margin-top: 120px;
+        margin-left: calc(5%);
+        line-height: 60px;
+        font-size: 45px;
+        color: black;
+        z-index: 999;
+        }
+
+        .imgtittle{
+            position: absolute;
+            margin-top: calc(25%);
+            margin-left: calc(20%);
+            width: 500px;
+            height: 250px;
+            z-index: 999;
+        }
+
+        .secondtittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(70%);
+            margin-left: calc(13.4%);
+            font-size: calc(40px);
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        .sinopsis{
+            margin-top: calc(80%);
+            margin-left: calc(5%);
+            position: absolute;
+            font-size: calc(14px);
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            letter-spacing: 3px;
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .FichaTecnica{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(99%);
+            margin-left: calc(38%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        
+        .especificaciones{
+            position: absolute;
+            margin-left: calc(4.5%);
+            margin-top: calc(106%);
+            z-index: 999;
+            
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            line-height: -1.5;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            font-weight: bold;
+            margin-bottom: -15px;
+            z-index: 999;
+            
+        }
+
+        .emoji {
+            font-size: 15px;
+            margin-right: 10px;
+            z-index: 999;
+        }
+
+        .idioma {
+            margin-top: calc(126%);
+            margin-left: calc(35%);
+            position: absolute;
+            width: 10px;
+            height: 8px;
+            z-index: 999;
+        }
+
+        .gameplaytittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(145%);
+            margin-left: calc(42%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .video{
+            position: absolute;
+            margin-top: calc(155%);
+            margin-left: calc(5%);
+            z-index: 999;
+        }
+
+        .capturas{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(225%);
+            margin-left: calc(42%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .contenedor_fotos {
+            width: calc(95%); /* Ancho total del contenedor */
+            position: absolute;
+            margin-top: calc(235%);
+            margin-left: calc(5%);
+            display: flex;
+            gap: 10px; /* Espacio entre las imágenes */
+            z-index: 999;
+        }
+
+        .capturas_fotos {
+            flex: 1;
+            width: 200px; /* Tamaño cuadrado de cada imagen */
+            height: 200px; /* Tamaño cuadrado de cada imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 999;
+        }
+
+        .requisitos{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(265%);
+            margin-left: calc(30%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .requisitosjuego{
+            margin-top: calc(272%);
+            margin-left: calc(5%);
+            position: absolute;
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .requisitos_minimos{
+            margin-top: calc(1%);
+            z-index: 999;
+        }
+
+        .instrucciones{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(293%);
+            margin-left: calc(38.5%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .instrucciones_pasos{
+            margin-top: calc(299%);
+            margin-left: calc(5%);
+            position: absolute;
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .enlacedescarga_tittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(316%);
+            margin-left: calc(32%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        
+        .enlacedescarga_foto{
+            position: absolute;
+            margin-top: calc(315%);
+            margin-left: calc(20%);
+            width: 20px;
+            z-index: 999;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-texts">
+            <a href="../../index.html" class="header-text">INICIO</a>
+            <a href="../../juegospc.html" class="header-text">JUEGOS PC</a>
+            <div class="dropdown">
+                <a href="../../juegosandroid.html" class="header-text">JUEGOS ANDROID</a>
+                <div class="submenu">
+                    <a href="Cromos.html">Cromos</a>
+                    <a href="Ruleta.html">Ruleta</a>
+                    <a href="pro.html">Salon de la Fama</a>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <a href="programas.html" class="header-text" id="header-text">PROGRAMAS/EMULADORES</a>
+                <div class="submenus">
+                    <a href="programas.html">PROGRAMAS</a>
+                    <a href="emuladores.html">EMULADORES</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="logo"><img src="../../recursos/logo_principal1.png"></div>
+    <div class="background0"></div>
+    <div class="background0b"></div>
+    <div class="background1">
+        <div class="headtittle">FIVE NIGHTS AT FREDDY 1, 2, 3 Y 4</div>
+        <div class="imgtittle"><img src="../../android_recursos/fnaf1234.png"></div>
+        <div class="secondtittle">Five Nights At Freddy 1, 2, 3 y 4</div>
+        <div class="sinopsis">es un juego de terror en primera persona en el que los jugadores aceptarán un trabajo en la famosa Pizería Familiar de Freddy, en la que unos simpáticos robots entretienen a los más pequeños durante las comidas. El problema: por la noche los robots se comportan de manera un tanto extraña. El trabajo del jugador consistirá en vigilar a Freddy y a sus amigos durante toda la noche a través de las cámaras de seguridad. Eso sí, debido a los problemas de presupuesto tan sólo tendremos una pequeña cantidad de electricidad que podremos utilizar cada noche, y si se acaba… quedaremos a merced de Freddy.</div>
+        <div class="FichaTecnica">FICHA TECNICA</div>
+        <div class="especificaciones">
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>PLATAFORMA: ANDROID</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>PESO TOTAL: 250 MB</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FORMATO: APK</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FECHA DE ESTRENO: 08/08/2014</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FECHA DE ACTUALIZACION: 17/05/2022</p>
+            </div>
+        </div>
+        <div class="idioma"><img src="../../idioma.webp"></div>
+        <div class="gameplaytittle">GAMEPLAY</div>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/RP4UTOek0-Y" title="Five Nights at Freddy&#39;s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="860" height="420"></iframe>
+            </div>
+        <div class="capturas">CAPTURAS</div>
+        <div class="contenedor_fotos">
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://play-lh.googleusercontent.com/GsuEZzJv8D4eMLuWOkh-05iuAXgBT_9479IeYsgqIK1rBKIc84_Bw8Ur65uHlY_wR5I=w526-h296-rw&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://images.saymedia-content.com/.image/t_share/MTc0NDU2ODg1MjE4Mzg3MzA0/five-nights-at-freddys-2-walkthrough.png&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://i.ytimg.com/vi/JysmsFcRXWw/maxresdefault.jpg&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://m.media-amazon.com/images/M/MV5BMzM4OThiYjctZWI4ZS00YzUyLTlkYTQtMzhjOTZkYmY4YWFmXkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_.jpg&quot;);"></div>
+        </div>
+        <div class="requisitos">REQUISITOS DEL SISTEMA</div>
+        <div class="requisitosjuego">
+            <div class="requisitos_minimos">MINIMOS</div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Requiere Android: 5.0 y versiones posteriores</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Almacenamietno: 200 MB</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Versión: 2.0.1</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Autor: Scott Cawthon</p>
+            </div>
+        </div>
+        <div class="instrucciones">INSTRUCCIONES</div>
+        <div class="instrucciones_pasos">
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>1.Descargar el juego</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>2.Instala el Apk de cada juego</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>4.Jugar 😎</p>
+            </div>
+        </div>
+        <div class="enlacedescarga_tittle">ENLACES DE DESCARGA</div>
+        <div class="enlacedescarga_foto">
+            <a href="https://playpaste.com/?v=jHFX" target="_blank" class="enlacedescarga_foto">
+                <img src="../../enlaces.webp" alt="Descripción de la imagen">
+            </a>
+        </div>
+    </div>
+
+    
+    <script src="../../menudesplegable.js" defer></script>
+    <script src="../../scriptfotos.js" defer></script>
+
+</body>
+</html>

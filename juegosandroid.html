@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacetn</title>
+    <link rel="icon" href="Imagenes\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="common-styles.css">
+    <link rel="stylesheet" href="menudesplegable.css">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: calc(1000px);
+            width: calc(1200px);
+        }
+        .gallery {
+            z-index: 999;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+            gap: 15px; /* Espacio entre las imágenes */
+            width: calc(80% - 100px); /* Ancho total de la galería (restando 30px para el espacio del borde izquierdo) */
+            margin-top: calc(30%);
+            margin-left: 30px; /* Espacio del borde izquierdo */
+            padding: 0 20px; /* Agrega un espaciado lateral para centrar la grilla */
+            margin-bottom: calc(100%);
+        }
+        .gallery img {
+            z-index: 999;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            max-height: 150px; /* Altura máxima de la imagen */
+            transition: transform 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
+            border: 2px solid transparent; /* Borde inicial transparente */
+            margin: 0;
+        }
+
+        .game:hover img {
+        border-color: rgb(255, 250, 221); /* Color de borde al pasar el mouse */
+        margin: -2px;
+        transform: scale(1.1); /* Ajusta el valor según el efecto deseado */
+        }
+        .game-name {
+            z-index: 999;
+            font-family: "fuentedefault";
+            margin-top: 8px;
+            text-align: center; /* Alinea el texto al centro */
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.1s ease;
+        }
+
+        .game-name:hover {
+            color: #ff2a2a; /* Cambia el color del texto al pasar el cursor sobre él */
+        }
+
+        .numerodepagina {
+            position: absolute;
+            font-size: 15px;
+            margin-left: calc(37%);
+            margin-top: calc(99%);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-texts">
+            <a href="index.html" class="header-text">INICIO</a>
+            <a href="juegospc.html" class="header-text">JUEGOS PC</a>
+            <div class="dropdown">
+                <a href="juegosandroid.html" class="header-text">JUEGOS ANDROID</a>
+                <div class="submenu">
+                    <a href="Cromos.html">Cromos</a>
+                    <a href="Ruleta.html">Ruleta</a>
+                    <a href="pro.html">Salon de la Fama</a>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <a href="programas.html" class="header-text" id="header-text">PROGRAMAS/EMULADORES</a>
+                <div class="submenus">
+                    <a href="programas.html">PROGRAMAS</a>
+                    <a href="emuladores.html">EMULADORES</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="logo"><img src="recursos/logo_principal1.png"></div>
+    <div class="background0"></div>
+    <div class="background0b"></div>
+    <div class="background1">
+        <div class="gallery">
+            <div class="game">
+                <a href="juegos android/page 1/fnaf 1al4.html"><img src="android_recursos/fnaf1234.png" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/fnaf 1al4.html" class="game-name">Fnaf 1, 2, 3 y 4 para Android</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/dan_the_man.html"><img src="android_recursos/dan_the_man.jpg" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/dan_the_man.html" class="game-name">Dan The Man</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/ancestor.html"><img src="android_recursos/ancestor.webp" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/ancestor.html" class="game-name">Ancestor</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/stumble_guys.html"><img src="android_recursos/stumble_guys.png" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/stumble_guys.html" class="game-name">Stumble Guys + Mod Menu</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/subway_surfer.html"><img src="android_recursos/subway_surfers.webp" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/subway_surfer.html" class="game-name">Subway Surfers + Mod Menu</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/rebrawl.html"><img src="android_recursos/rebrawl.png" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/rebrawl.html" class="game-name">Multi Brawl</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/pou.html"><img src="android_recursos/pou.jpg" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/pou.html" class="game-name">Pou Mod Apk</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/poppy_playtime_chapter_one.html"><img src="android_recursos/poppy_playtime_chapter_one.png" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/poppy_playtime_chapter_one.html" class="game-name">Poppy Playtime Chapter One</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/limbo.html"><img src="android_recursos/limbo.jpg" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/limbo.html" class="game-name">Limbo</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/rodeo_stampede.html"><img src="android_recursos/Rodeo Stampede.png" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/rodeo_stampede.html" class="game-name">Rodeo Stampede Mod Dinero Infinito</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/prey_day.html"><img src="android_recursos/prey_day.jpg" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/prey_day.html" class="game-name">Prey Day Mod apk</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos android/page 1/clash_of_clans.html"><img src="android_recursos/clash_of_clans.jpg" alt="Juego 1"></a>
+                <div><a href="juegos android/page 1/clash_of_clans.html" class="game-name">Clash Of Clans Mod Gemas Infinitas</a></div>
+            </div>
+            <!-- Repite lo mismo para las demás imágenes -->
+        </div>
+        <div class="numerodepagina">
+            <p>1</p>
+        </div>
+    </div>
+
+    
+    
+    <script src="menudesplegable.js" defer></script>
+    <script src="scriptfotos.js" defer></script>
+
+</body>
+</html>

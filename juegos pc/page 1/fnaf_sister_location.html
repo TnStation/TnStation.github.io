@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Nights At Freddy Sister Location</title>
+    <link rel="icon" href="Imagenes\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../common-styles.css">
+    <link rel="stylesheet" href="../../menudesplegable.css">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 3800px;
+            width: 900px;
+            z-index: 999;
+        }
+
+        .headtittle{
+        font-family: "fuentedefault";
+        position: absolute;
+        margin-top: 120px;
+        margin-left: calc(5%);
+        line-height: 60px;
+        font-size: 45px;
+        color: black;
+        white-space: nowrap;
+        z-index: 999;
+        }
+
+        .imgtittle{
+            position: absolute;
+            margin-top: calc(25%);
+            margin-left: calc(20%);
+            width: 500px;
+            height: 250px;
+            z-index: 999;
+        }
+
+        .secondtittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(70%);
+            margin-left: calc(5%);
+            font-size: calc(40px);
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            white-space: nowrap;
+            z-index: 999;
+        }
+        .sinopsis{
+            margin-top: calc(80%);
+            margin-left: calc(5%);
+            position: absolute;
+            font-size: calc(14px);
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            letter-spacing: 3px;
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .FichaTecnica{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(93%);
+            margin-left: calc(38%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        
+        .especificaciones{
+            position: absolute;
+            margin-left: calc(4.5%);
+            margin-top: calc(100%);
+            z-index: 999;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            line-height: -1.5;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            font-weight: bold;
+            margin-bottom: -15px;
+            z-index: 999;
+            
+        }
+
+        .emoji {
+            font-size: 15px;
+            margin-right: 10px;
+            z-index: 999;
+        }
+
+        .idioma {
+            margin-top: calc(120%);
+            margin-left: calc(35%);
+            position: absolute;
+            width: 10px;
+            height: 8px;
+            z-index: 999;
+        }
+
+        .gameplaytittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(145%);
+            margin-left: calc(42%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .video{
+            position: absolute;
+            margin-top: calc(155%);
+            margin-left: calc(5%);
+            z-index: 999;
+        }
+
+        .capturas{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(225%);
+            margin-left: calc(42%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .contenedor_fotos {
+            width: calc(95%); /* Ancho total del contenedor */
+            position: absolute;
+            margin-top: calc(235%);
+            margin-left: calc(5%);
+            display: flex;
+            gap: 10px; /* Espacio entre las imágenes */
+            z-index: 999;
+        }
+
+        .capturas_fotos {
+            flex: 1;
+            width: 200px; /* Tamaño cuadrado de cada imagen */
+            height: 200px; /* Tamaño cuadrado de cada imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 999;
+        }
+
+        .requisitos{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(265%);
+            margin-left: calc(30%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .requisitosjuego{
+            margin-top: calc(272%);
+            margin-left: calc(5%);
+            position: absolute;
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .requisitos_minimos{
+            margin-top: calc(1%);
+            z-index: 999;
+        }
+
+        .requisitosjuego_recomendados{
+            margin-top: calc(300%);
+            margin-left: calc(5%);
+            position: absolute;
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .requisitos_recomendados{
+            margin-top: calc(1%);
+            z-index: 999;
+        }
+        
+        .instrucciones{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(330%);
+            margin-left: calc(36%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .instrucciones_pasos{
+            margin-top: calc(337%);
+            margin-left: calc(5%);
+            position: absolute;
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .enlacedescarga_tittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(357%);
+            margin-left: calc(30%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        
+        .enlacedescarga_foto{
+            position: absolute;
+            margin-top: calc(355%);
+            margin-left: calc(20%);
+            width: 20px;
+            z-index: 999;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-texts">
+            <a href="../../index.html" class="header-text">INICIO</a>
+            <a href="../../juegospc.html" class="header-text">JUEGOS PC</a>
+            <div class="dropdown">
+                <a href="../../juegosandroid.html" class="header-text">JUEGOS ANDROID</a>
+                <div class="submenu">
+                    <a href="Cromos.html">Cromos</a>
+                    <a href="Ruleta.html">Ruleta</a>
+                    <a href="pro.html">Salon de la Fama</a>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <a href="programas.html" class="header-text" id="header-text">PROGRAMAS/EMULADORES</a>
+                <div class="submenus">
+                    <a href="programas.html">PROGRAMAS</a>
+                    <a href="emuladores.html">EMULADORES</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="logo"><img src="../../recursos/logo_principal1.png"></div>
+    <div class="background0"></div>
+    <div class="background0b"></div>
+    <div class="background1">
+        <div class="headtittle">FIVE NIGHTS AT FREDDY SISTER LOCATION</div>
+        <div class="imgtittle"><img src="../../juegos/fnaf_sister_location.webp"></div>
+        <div class="secondtittle">Five Nights At Freddy Sister Location</div>
+        <div class="sinopsis">¡Bienvenido a Circus Baby's Pizza World, donde la diversión familiar y la interactividad van más allá de cualquier otra cosa que hayas visto en *otras* pizzerias! Con innovadores y divertidos animatrónicos que les harán saltar los calcetines a tus hijos, así como su atención personalizada, ninguna fiesta está completa sin Circus Baby y su banda!</div>
+        <div class="FichaTecnica">FICHA TECNICA</div>
+        <div class="especificaciones">
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>PLATAFORMA: PC</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>PESO TOTAL: 4.7 GB</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FORMATO: ISO</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FECHA DE ESTRENO: 14/02/20</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FECHA DE ACTUALIZACION: 17/08/23</p>
+            </div>
+        </div>
+        <div class="idioma"><img src="../../idioma.webp"></div>
+        <div class="gameplaytittle">GAMEPLAY</div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/pEQHWewZn-g" title="Five Nights at Freddy&#39;s Sister Location Trailer En Español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="860" height="420"></iframe>
+            </div>
+        <div class="capturas">CAPTURAS</div>
+        <div class="contenedor_fotos">
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://i.ytimg.com/vi/_dWxlhktlu4/maxresdefault.jpg&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://alchetron.com/cdn/five-nights-at-freddys-sister-location-027bda49-ccc5-4073-a73a-e0355dde7a4-resize-750.jpeg&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://i.ytimg.com/vi/-IWbtTfgst4/maxresdefault.jpg&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7a4933ad-be22-40c0-8af6-13cace998d43/dc43krp-3f4e67f3-d1b7-4c98-9245-e6d9db4300c6.jpg/v1/fill/w_800,h_450,q_75,strp/circus_baby_jumpscare_by_stark_media_dc43krp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdhNDkzM2FkLWJlMjItNDBjMC04YWY2LTEzY2FjZTk5OGQ0M1wvZGM0M2tycC0zZjRlNjdmMy1kMWI3LTRjOTgtOTI0NS1lNmQ5ZGI0MzAwYzYuanBnIiwiaGVpZ2h0IjoiPD00NTAiLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzdhNDkzM2FkLWJlMjItNDBjMC04YWY2LTEzY2FjZTk5OGQ0M1wvc3RhcmstbWVkaWEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.s_6vfP1fDAxMAyGYpqPYuc8NMAYtiWPCvAUIpbzrMNA&quot;);"></div>
+        </div>
+        <div class="requisitos">REQUISITOS DEL SISTEMA</div>
+        <div class="requisitosjuego">
+            <div class="requisitos_minimos">MINIMOS</div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>SO: Windows 8/10/11 (64-Bit)</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Procesador: Intel Core i5-6600@ 3.1 GHz or AMD R5 1600X @ 3.5 GHz or equivalent</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Memoria: 8 GB de RAM</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Gráficos: NVIDIA GeForce GTX 1650 or equivalent</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>DirectX: Versión 12</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Almacenamiento: 6 GB de espacio disponible</p>
+            </div>
+        </div>
+
+        <div class="requisitosjuego_recomendados">
+            <div class="requisitos_recomendados">RECOMENDADOS</div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Requiere un procesador y un sistema operativo de 64 bits</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>SO: Windows 8/10/11 (64-Bit)</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Procesador: Intel Core i5 10400 3.1 GHz or AMD Ryzen 5 2600x 3.1 GHz</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Memoria: 16 GB de RAM</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Gráficos: NVIDIA GeForce RTX 3060 or equivalent</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Almacenamiento: 6 GB de espacio disponible</p>
+            </div>
+        </div>
+        <div class="instrucciones">INSTRUCCIONES</div>
+        <div class="instrucciones_pasos">
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>1.Descargar el juego</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>2.Descomprimir carpeta RAR</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>3.Ejecutar el juego como Administrador</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>4.Jugar 😎</p>
+            </div>
+        </div>
+        <div class="enlacedescarga_tittle">ENLACES DE DESCARGA</div>
+        <div class="enlacedescarga_foto">
+            <a href="https://playpaste.com/?v=jHFX" target="_blank" class="enlacedescarga_foto">
+                <img src="../../enlaces.webp" alt="Descripción de la imagen">
+            </a>
+        </div>
+    </div>
+
+    
+    <script src="../../menudesplegable.js" defer></script>
+    <script src="../../scriptfotos.js" defer></script>
+
+</body>
+</html>

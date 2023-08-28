@@ -1,0 +1,161 @@
+header {
+    background-color: #000000;
+    height: calc(80px);
+    position: fixed;
+    top: calc(0);
+    left: calc(0);
+    width: calc(100%);
+    z-index: calc(1000);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.background0 {
+    position: fixed;
+    background-image: url("recursos/fondo.jpg");
+    background-size: 30px auto; /* Ancho de 10px, alto automático */
+    background-repeat: repeat-y; /* Repetir solo verticalmente */
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    opacity: 0.23;
+}
+
+.background0b {
+    position: fixed;
+    background-image: url("recursos/fondo.jpg");
+    margin-left: 1300px;
+    background-size: 30px auto; /* Ancho de 10px, alto automático */
+    background-repeat: repeat-y; /* Repetir solo verticalmente */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.23;
+}
+
+.background1 {
+    position: relative; /* Agregamos la posición relativa al contenedor para que el posicionamiento absoluto del texto sea relativo a este contenedor */
+    background-color: #ffffff;
+    background-size: cover; /* Ajusta la imagen al tamaño del div */
+    height: calc( 200vh); /* Ajusta la altura a tu preferencia */
+    margin-top: calc(0px); /* Ajusta el valor para que el contenido no se oculte detrás del header */
+    box-shadow: 6 6 3000px rgb(255, 0, 0);
+    opacity: 0.2px;
+    display: flex;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+@keyframes parpadeo {
+    0% { opacity: 1; } /* Opacidad completa al inicio */
+    50% { opacity: 0.5; } /* Opacidad reducida al 50% */
+    100% { opacity: 1; } /* Opacidad completa al final */
+  }
+  
+/* Aplicamos la animación a los íconos de las redes sociales */
+.social-logo img {
+    animation: parpadeo 1s infinite;
+}
+
+.social-logo {
+    display: flex;
+    gap: 0px; /* Espacio entre los logos (horizontal) */
+    margin-top: 10px; /* Espacio hacia arriba */
+    margin-bottom: 10px; /* Espacio hacia abajo */
+}
+
+.social-logo {
+    width: 38px;
+    height: 38px;
+}
+
+/* Estilos para los textos en el header */
+.header-texts {
+    font-family: "fuentedefault";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: calc(0%);
+    margin-left: calc(28%);
+    gap: calc(2px); /* Espacio de 30px entre los textos */
+    text-decoration: none;
+}
+
+.header-text {
+    margin: 0 18px;
+    font-size: calc(20px);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Estilo para el cambio de color en hover */
+.header-text:hover {
+    color: #f6b0ff; /* Cambia el color del texto al pasar el cursor sobre él */
+    border-color: white;
+    border-radius: 10px;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-encima {
+    color: white; /* Color del texto */
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; /* Sombra para simular el contorno */
+
+/* Configuración del espacio interno */
+padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el texto no quede pegado al borde */
+}
+
+.stop {
+    width: 250px; /* Ancho deseado */
+    height: 190px; /* Altura deseada */
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 40%; /* Margen izquierdo para separar la imagen del texto */
+    z-index: 2;
+}
+
+.degradado {
+    width: 100%;
+    height: -100vh; /* Establecemos una altura del 100% del viewport */
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #ff0000, #9e5757); /* Degradado de blanco a gris */
+}
+
+@font-face {
+    font-family: 'fuentedefault';
+    src: url('recursos/Bills_Mafia.ttf') format('truetype'),
+         url('recursos/Bills_Mafia.ttf') format('truetype');
+}
+
+.logo img{
+    
+    position: fixed;
+    margin-top: calc(1%);
+    margin-left: calc(2.5%);
+    width: calc(24%); /* Cambia este valor según tus necesidades */
+    height: calc(10%); /* Esto mantendrá la proporción de aspecto */
+    z-index: calc(1000);
+    animation: float 3s infinite alternate;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-3px); } /* Ajusta la distancia de levitación */
+}
