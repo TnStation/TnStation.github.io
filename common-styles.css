@@ -17,7 +17,7 @@ header {
     background-size: 30px auto; /* Ancho de 10px, alto automático */
     background-repeat: repeat-y; /* Repetir solo verticalmente */
     width: 100%;
-    height: 90%;
+    height: 100%;
     z-index: 1;
     opacity: 0.23;
 }
@@ -158,4 +158,25 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
 @keyframes float {
     0% { transform: translateY(0); }
     100% { transform: translateY(-3px); } /* Ajusta la distancia de levitación */
+}
+
+.numerodepagina_contenedor {
+    font-family: "fuentedefault";
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: calc(37%);
+    margin-top: calc(99%);
+    max-width: calc(120ch);
+    z-index: 999;
+    gap: calc(5%);
+}
+
+.numerodepagina {
+    color:#c98585;
+    font-family: "fuentedefault";
+    text-decoration: none;
+}
+.current-page {
+    color: #5f5656;
 }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacetn</title>
+    <link rel="icon" href="Imagenes\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../common-styles.css">
+    <link rel="stylesheet" href="../../../menudesplegable.css">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: calc(1000px);
+            width: calc(1200px);
+        }
+        .gallery {
+            z-index: 999;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+            gap: 15px; /* Espacio entre las imágenes */
+            width: calc(80% - 100px); /* Ancho total de la galería (restando 30px para el espacio del borde izquierdo) */
+            margin-top: calc(30%);
+            margin-left: 30px; /* Espacio del borde izquierdo */
+            padding: 0 20px; /* Agrega un espaciado lateral para centrar la grilla */
+            margin-bottom: calc(100%);
+        }
+        .gallery img {
+            z-index: 999;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            max-height: 150px; /* Altura máxima de la imagen */
+            transition: transform 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
+            border: 2px solid transparent; /* Borde inicial transparente */
+            margin: 0;
+        }
+
+        .game:hover img {
+        border-color: rgb(255, 250, 221); /* Color de borde al pasar el mouse */
+        margin: -2px;
+        transform: scale(1.1); /* Ajusta el valor según el efecto deseado */
+        }
+        .game-name {
+            z-index: 999;
+            font-family: "fuentedefault";
+            margin-top: 8px;
+            text-align: center; /* Alinea el texto al centro */
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.1s ease;
+        }
+
+        .game-name:hover {
+            color: #ff2a2a; /* Cambia el color del texto al pasar el cursor sobre él */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-texts">
+            <a href="../../../index.html" class="header-text">INICIO</a>
+            <a href="../../../juegospc.html" class="header-text">JUEGOS PC</a>
+            <div class="dropdown">
+                <a href="../../../juegosandroid.html" class="header-text">JUEGOS ANDROID</a>
+                <div class="submenu">
+                    <a href="Cromos.html">Cromos</a>
+                    <a href="Ruleta.html">Ruleta</a>
+                    <a href="pro.html">Salon de la Fama</a>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <a href="programas.html" class="header-text" id="header-text">PROGRAMAS/EMULADORES</a>
+                <div class="submenus">
+                    <a href="programas.html">PROGRAMAS</a>
+                    <a href="emuladores.html">EMULADORES</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="logo"><img src="../../../recursos/logo_principal1.png"></div>
+    <div class="background0"></div>
+    <div class="background0b"></div>
+    <div class="background1">
+        <div class="gallery">
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/metal_slug_awakening.html"><img src="../../android_recursos/metal_slug_awakening.jpg" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/metal_slug_awakening.html" class="game-name">Metal Slug Awakening</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/arena_breakout.html"><img src="../../android_recursos/arena_breakout.png" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/arena_breakout.html" class="game-name">Arena Breakout</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/clash_royale.html"><img src="../../android_recursos/clash_royale.jpg" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/clash_royale.html" class="game-name">Clash Royale Mod Apk</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/pvz_1.html"><img src="../../android_recursos/pvz.webp" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/pvz_1.html" class="game-name">Planta Vs Zombies 1 Mod Apk</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/head_soccer.html"><img src="../../android_recursos/head_soccer.webp" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/head_soccer.html" class="game-name">Head Soccer Mod Apk</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/goat_simulator.html"><img src="../../android_recursos/goat_simulator.jpg" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/goat_simulator.html" class="game-name">Goat Simulator</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/doki_doki_literature_club.html"><img src="../../android_recursos/doki_doki_literature_club.webp" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/doki_doki_literature_club.html" class="game-name">Doki Doki Literature Club</a></div>
+            </div>
+            <div class="game">
+                <a href="../Android/juegos android/page 1/poppy_playtime_chapter_one.html"><img src="../../android_recursos/hero_of_battle.jpg" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 1/poppy_playtime_chapter_one.html" class="game-name">Hero of Battle</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 1/limbo.html"><img src="../../android_recursos/dead_by_daylight.png" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 1/limbo.html" class="game-name">Dead By Daylight</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 1/rodeo_stampede.html"><img src="../../android_recursos/street_fight.jpg" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 1/rodeo_stampede.html" class="game-name">Street Fight</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 2/fc_sport_2024.html"><img src="../../android_recursos/fc_sport_2024.webp" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 2/fc_sport_2024.html" class="game-name">Fc Sport 2024</a></div>
+            </div>
+            <div class="game">
+                <a href="../../../Android/juegos android/page 1/clash_of_clans.html"><img src="../../android_recursos/minecraft.png" alt="Juego 1"></a>
+                <div><a href="../../../Android/juegos android/page 1/clash_of_clans.html" class="game-name">Minecraft Bedrock/Java Apk</a></div>
+            </div>
+            <!-- Repite lo mismo para las demás imágenes -->
+        </div>
+        <div class="numerodepagina_contenedor">
+            <a href="../../../juegosandroid.html" class="numerodepagina">1</a>
+            <span class="current-page" class="numerodepagina">2</span>
+            <a href="Android/juegos android/page 3/page_3.html" class="numerodepagina">-</a>
+            <a href="Android/juegos android/page 4/page_4.html" class="numerodepagina">-</a>
+            <span>&hellip;</span>
+            <!-- Puedes continuar agregando más números de página si es necesario -->
+        </div>
+    </div>
+
+    
+    
+    <script src="../../../menudesplegable.js" defer></script>
+    <script src="../../../scriptfotos.js" defer></script>
+
+</body>
+</html>
