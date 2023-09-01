@@ -204,7 +204,7 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
 
 #ad-container {
     position: absolute;
-    top: 102%;
+    top: 500px;
     margin-left: 1130px;
     transform: translateY(-50%);
     max-width: 10%;
@@ -293,8 +293,8 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
 
 .publicidad_lateral {
     position: absolute;
-    margin-top: calc(48%);
-    margin-left: calc(69%);
+    margin-top: calc(650px);
+    margin-left: 930px;
     z-index: 999;
 }
 .ofertas_tittle {
@@ -303,6 +303,7 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
     color: rgb(96, 109, 138); /* Cambia el color a naranja */
     font-size: 20px;
     margin-bottom: 15px;
+    white-space: nowrap;
 }
 
 .imagen_enlace {
@@ -320,9 +321,10 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
     font-weight: bold;
     margin-left: 10px; /* Agregar espacio entre imagen y texto */
     font-size: 13px;
-    max-width: calc(30ch);
+    max-width: 26ch;
     text-decoration: none;
     color:#000000;
+    word-wrap: break-word;
 }
 
 .ofertas_texto:hover {
