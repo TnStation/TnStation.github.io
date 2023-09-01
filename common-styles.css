@@ -145,12 +145,11 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
 }
 
 .logo img{
-    
     position: fixed;
-    margin-top: calc(1%);
+    margin-top: calc(-2%);
     margin-left: calc(2.5%);
     width: calc(24%); /* Cambia este valor según tus necesidades */
-    height: calc(10%); /* Esto mantendrá la proporción de aspecto */
+    height: auto; /* Esto mantendrá la proporción de aspecto */
     z-index: calc(1000);
     animation: float 3s infinite alternate;
 }
@@ -179,4 +178,153 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
 }
 .current-page {
     color: #5f5656;
+}
+
+.boton {
+    display: inline-block;
+    width: 449px;
+    height: 70px;
+    background: linear-gradient(45deg, #e74c3c 0%, #ff6b6b 50%, #ec5b4b 100%);
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0px 6px rgb(240, 47, 47);
+}
+
+.boton:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 3px rgba(240, 47, 47);
+}
+
+#ad-container {
+    position: absolute;
+    top: 102%;
+    margin-left: 1130px;
+    transform: translateY(-50%);
+    max-width: 10%;
+    z-index: 999; /* Asegura que el anuncio esté por encima de otros elementos */
+}
+
+.containerboton {
+    padding: 2px;
+}
+
+.boton1 {
+    margin-left: 61px;
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    height: 50px;
+    background: linear-gradient(45deg, #87bcee 0%, #3ca0fd 50%, #87bcee 100%);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0px 6px rgb(75, 159, 192);
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.boton1:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 3px rgba(75, 159, 192);
+}
+
+.boton2 {
+    position: relative;
+    display: inline-block;
+    width: 210px;
+    height: 50px;
+    background: linear-gradient(45deg, #e74c3c 0%, #ff6b6b 50%, #ec5b4b 100%);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0px 6px rgb(240, 47, 47);
+    text-decoration: none;
+}
+
+.boton2:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 3px rgba(240, 47, 47);
+}
+
+.pley {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-47%);
+}
+
+.pley img {
+    margin-left: calc(17px);
+    margin-top: calc(13px);
+    width: 20px; /* Ajustamos el tamaño de la imagen */
+}
+
+.DescargaYa {
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-48%);
+}
+
+.DescargaYa img {
+    margin-left: calc(3px);
+    margin-top: calc(13px);
+    width: 20px; /* Ajustamos el tamaño de la imagen */
+}
+
+.publicidad_lateral {
+    position: absolute;
+    margin-top: calc(48%);
+    margin-left: calc(69%);
+    z-index: 999;
+}
+.ofertas_tittle {
+    font-family: "fuentedefault";
+    letter-spacing: 2px;
+    color: rgb(96, 109, 138); /* Cambia el color a naranja */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.imagen_enlace {
+    display: flex; /* Cambiar a flex para alinear imagen y texto horizontalmente */
+    align-items: center; /* Alinear verticalmente imagen y texto */
+    margin-bottom: 40px;
+}
+
+.imagen_enlace img {
+    max-width: 170px;
+    max-height: 80px;
+}
+
+.ofertas_texto {
+    font-weight: bold;
+    margin-left: 10px; /* Agregar espacio entre imagen y texto */
+    font-size: 13px;
+    max-width: calc(30ch);
+    text-decoration: none;
+    color:#000000;
+}
+
+.ofertas_texto:hover {
+    color: #e74c3c;
 }

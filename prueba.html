@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Juegos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        background-color: aqua;
+    }
+
+    .gradient-button-2 {
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 30px;
+        background: linear-gradient(45deg, #e74c3c 0%, #ff6b6b 50%, #ec5b4b 100%);
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.3s;
+        box-shadow: 0px 6px rgb(240, 47, 47);
+    }
+
+    .gradient-button-2:hover {
+        transform: translateY(2px);
+        box-shadow: 0px 3px rgba(240, 47, 47);
+    }
+
+    .pley {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+    }
+
+    .pley img {
+        margin-left: calc(17px);
+        margin-top: calc(13px);
+        width: 15px; /* Ajustamos el tamaño de la imagen */
+    }
+
+</style>
 </head>
 <body>
-    <h1>Lista de Juegos</h1>
-    <ul>
-        <li>Juego 1</li>
-        <li>Juego 2</li>
-        <li>Juego 3</li>
-        <li>Juego 4</li>
-        <li>Juego 5</li>
-        <!-- ... Agregar más juegos ... -->
-    </ul>
-
-    <div class="pagination">
-        <a href="pagina1.html">1</a>
-        <a href="pagina2.html">2</a>
-        <a href="pagina3.html">3</a>
-        <!-- ... Agregar más enlaces de páginas ... -->
+    <div>
+        <button class="gradient-button-2">
+            <div class="pley"><img src="recursos/PLEY.png"></div>
+            INICIAR JUEGO
+        </button>
     </div>
 </body>
 </html>
