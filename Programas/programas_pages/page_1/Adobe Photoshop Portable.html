@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Photoshop Portable</title>
+    <link rel="icon" href="Imagenes\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../common-styles.css">
+    <link rel="stylesheet" href="../../../menudesplegable.css">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 3300px;
+            width: 900px;
+            z-index: 999;
+        }
+
+        .headtittle{
+            font-family: "fuentedefault";
+        position: absolute;
+        margin-top: 120px;
+        margin-left: calc(5%);
+        line-height: 60px;
+        font-size: 45px;
+        color: black;
+        z-index: 999;
+        }
+
+        .imgtittle{
+            position: absolute;
+            margin-top: calc(22%);
+            margin-left: calc(20%);
+            width: 500px;
+            height: 250px;
+            z-index: 999;
+        }
+
+        .secondtittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(70%);
+            margin-left: calc(25%);
+            font-size: calc(40px);
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        .sinopsis{
+            margin-top: calc(80%);
+            margin-left: calc(5%);
+            position: absolute;
+            font-size: calc(14px);
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            letter-spacing: 3px;
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .FichaTecnica{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(93%);
+            margin-left: calc(38%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        
+        .especificaciones{
+            position: absolute;
+            margin-left: calc(4.5%);
+            margin-top: calc(100%);
+            z-index: 999;
+            
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            line-height: -1.5;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            font-weight: bold;
+            margin-bottom: -15px;
+            z-index: 999;
+        }
+
+        .emoji {
+            font-size: 15px;
+            margin-right: 10px;
+            z-index: 999;
+        }
+
+        .idioma {
+            margin-top: calc(120%);
+            margin-left: calc(35%);
+            position: absolute;
+            width: 10px;
+            height: 8px;
+            z-index: 999;
+        }
+
+        .gameplaytittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(145%);
+            margin-left: calc(42%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .video{
+            position: absolute;
+            margin-top: calc(155%);
+            margin-left: calc(5%);
+            z-index: 999;
+        }
+
+        .capturas{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(225%);
+            margin-left: calc(42%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .contenedor_fotos {
+            width: calc(95%); /* Ancho total del contenedor */
+            position: absolute;
+            margin-top: calc(235%);
+            margin-left: calc(5%);
+            display: flex;
+            gap: 10px; /* Espacio entre las imágenes */
+            z-index: 999;
+        }
+
+        .capturas_fotos {
+            flex: 1;
+            width: 200px; /* Tamaño cuadrado de cada imagen */
+            height: 200px; /* Tamaño cuadrado de cada imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 999;
+        }
+
+        .requisitos{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(265%);
+            margin-left: calc(30%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .requisitosjuego{
+            margin-top: calc(272%);
+            margin-left: calc(5%);
+            position: absolute;
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .requisitos_minimos{
+            margin-top: calc(1%);
+            z-index: 999;
+        }
+
+        .instrucciones{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(300%);
+            margin-left: calc(36%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+
+        .instrucciones_pasos{
+            margin-top: calc(305%);
+            margin-left: calc(5%);
+            position: absolute;
+            color: #000;
+            max-width: calc(120ch); /* Establece el límite de caracteres por línea */
+            word-wrap: break-word; /* Rompe palabras largas para ajustarse */
+            line-height: 1.5;
+            z-index: 999;
+        }
+
+        .enlacedescarga_tittle{
+            font-family: "fuentedefault";
+            position: absolute;
+            margin-top: calc(330%);
+            margin-left: calc(30%);
+            font-size: 32px;
+            text-decoration: underline; /* Aplica subrayado */
+            color: rgb(192, 129, 13); /* Cambia el color a naranja */
+            z-index: 999;
+        }
+        
+        .enlacedescarga_foto{
+            position: absolute;
+            margin-top: calc(330%);
+            margin-left: calc(20%);
+            width: 20px;
+            z-index: 999;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../../../recursos/logo_principal1.png"></div>
+        <div class="header-texts">
+            <a href="../../../index.html" class="header-text">INICIO</a>
+            <a href="../../../juegospc.html" class="header-text">JUEGOS PC</a>
+            <div class="dropdown">
+                <a href="../../../juegosandroid.html" class="header-text">JUEGOS ANDROID</a>
+                <div class="submenu">
+                    <a href="Cromos.html">Cromos</a>
+                    <a href="Ruleta.html">Ruleta</a>
+                    <a href="pro.html">Salon de la Fama</a>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <a href="../../../programas.html" class="header-text" id="header-text">PROGRAMAS/EMULADORES</a>
+                <div class="submenus">
+                    <a href="../../../programas.html">PROGRAMAS</a>
+                    <a href="../../../emuladores.html">EMULADORES</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="background0"></div>
+    <div class="background0b"></div>
+    <div class="background1">
+        <div class="headtittle">ADOBE PHOTOSHOP PORTABLE</div>
+        <div class="imgtittle"><img src="../../programas_recursos/photoshop_portable.png">
+            <div class="containerboton">
+                <a href="https://adbuho.com/ref/RVJXZTFXdFovTXc5UnZRa2IrNXRrUT09-MjAtNw==" button class="boton1">
+                    <div class="pley"><img src="../../../recursos/PLEY.png"></div>
+                    INICIAR JUEGO
+                    </button>
+                </a>
+                <a href="https://adbuho.com/ref/ZmIrY1g1ZlZ3dzFXWmtaWFJ2VHdOUT09-MjAtNDA=" button class="boton2">
+                    <div class="DescargaYa"><img src="../../../recursos/DESCARGA YA.png"></div>
+                    DESCARGAR JUEGO
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="secondtittle">PHOTOSHOP PORTABLE</div>
+        <div class="sinopsis">Adobe Photoshop compone de dos partes principales: la mesa de trabajo y los paneles. A través de ellos podrás elegir herramientas y modificarlas a tu gusto para trabajar sobre las imágenes. También podrás gestionar las capas, es decir, las partes superpuestas en las que se compone una fotografía y sus efectos.</div>
+        <div class="FichaTecnica">FICHA TECNICA</div>
+        <div class="especificaciones">
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>PLATAFORMA: PC</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>PESO TOTAL: 60 MB</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FORMATO: PORTABLE.</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FECHA DE ESTRENO: 08/08/2013</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>FECHA DE ACTUALIZACION: 02/05/22 </p>
+            </div>
+        </div>
+        <div class="idioma"><img src="../../../idioma.webp"></div>
+        <div class="gameplaytittle">GAMEPLAY</div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/IVTyLYupECI" title="Adobe Photoshop (beta) x Adobe Firefly: Announcing Generative Fill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="860" height="420"></iframe>
+            </div>
+        <div class="capturas">CAPTURAS</div>
+        <div class="contenedor_fotos">
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://larepublica.cronosmedia.glr.pe/original/2023/05/29/6474db2f91686f082721e062.jpg&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://www.bloglenovo.es/app/uploads/2023/05/photoshop.jpg&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://i.blogs.es/cab09c/photoshop-dest/1366_2000.jpg&quot;);"></div>
+            <div class="capturas_fotos clickable-image" style="background-image: url(&quot;https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/06/15/16552648952876.jpg&quot;);"></div>
+        </div>
+        <div class="requisitos">REQUISITOS DEL SISTEMA</div>
+        <div class="requisitosjuego">
+            <div class="requisitos_minimos">MINIMOS</div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>SO: Windows XP or later</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Procesador: 1.5 GHz Core2Duo</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Memoria: 2 GB de RAM</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>Almacenamiento: 100 MB de espacio disponible</p>
+            </div>
+        </div>
+        <div class="instrucciones">INSTRUCCIONES</div>
+        <div class="instrucciones_pasos">
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>1.Descargar el juego</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>2.Descomprimir carpeta RAR</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>3.Ejecutar el juego como Administrador</p>
+            </div>
+            <div class="list-item">
+                <span class="emoji">❒</span>
+                <p>4.Jugar 😎</p>
+            </div>
+        </div>
+        <div class="enlacedescarga_tittle">ENLACES DE DESCARGA</div>
+        <div class="enlacedescarga_foto">
+            <a href="https://playpaste.com/?v=jHvz" target="_blank" class="enlacedescarga_foto">
+                <img src="../../../enlaces.webp" alt="Descripción de la imagen">
+            </a>
+        </div>
+    </div>
+    <div class="publicidad_lateral">
+        <div class="ofertas_tittle">OFERTAS INCREIBLES</div>
+        <div class="ofertas_icon">
+            <div class="imagen_enlace">
+                <a href="https://adbuho.com/ref/QnBQaVRoK3JhNTdYN0NsV1EvZktodz09-MjAtNg==">
+                    <img src="../../../recursos/anuncio 1.webp">
+                </a>
+                <a href="https://adbuho.com/ref/QnBQaVRoK3JhNTdYN0NsV1EvZktodz09-MjAtNg==" class="ofertas_texto ">LICENCIA DE WINDOWS 10/11 HOME/PRO [Oferta -94%]</a>
+            </div>
+            <div class="imagen_enlace">
+                <a href="https://adbuho.com/ref/ZmIrY1g1ZlZ3dzFXWmtaWFJ2VHdOUT09-MjAtNDA=">
+                    <img src="../../../recursos/anuncio 2.webp">
+                </a>
+                <a href="https://adbuho.com/ref/ZmIrY1g1ZlZ3dzFXWmtaWFJ2VHdOUT09-MjAtNDA=" class="ofertas_texto ">GAME PASS ULTIMATE – 3 MESES [Oferta -59%]</a>
+            </div>
+            <div class="imagen_enlace">
+                <a href="https://adbuho.com/ref/NHZzL1p3UGh6RmVqU2thVUg2RTl4UT09-MjAtMTk=">
+                    <img src="../../../recursos/anuncio 3.webp">
+                </a>
+                <a href="https://adbuho.com/ref/NHZzL1p3UGh6RmVqU2thVUg2RTl4UT09-MjAtMTk=" class="ofertas_texto ">OFFICE 365 [1 AÑO 94% DE DESCUENTO]</a>
+            </div>
+            <div class="imagen_enlace">
+                <a href="https://adbuho.com/ref/UHVwclI2RU4vOFlFbDQ0M0hvS00wZz09-MjAtMjk=">
+                    <img src="../../../recursos/anuncio 4.webp">
+                </a>
+                <a href="https://adbuho.com/ref/UHVwclI2RU4vOFlFbDQ0M0hvS00wZz09-MjAtMjk=" class="ofertas_texto ">ESET NOD 32 PREMIER [Oferta -70% Mejor ANTIVIRUS para GAMERS]</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="ad-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '4e162183b224b3b46a8c138f646f6aea',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/4e162183b224b3b46a8c138f646f6aea/invoke.js"></scr' + 'ipt>');
+        </script>
+    </div>
+
+    <script data-cfasync="false" src="//d31m6w8i2nx65e.cloudfront.net/?niwmd=998536"></script>
+    <script src="../../../menudesplegable.js" defer></script>
+    <script src="../../../scriptfotos.js" defer></script>
+
+</body>
+</html>

@@ -3,25 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spacetn</title>
+    <title>Programas</title>
     <link rel="icon" href="Imagenes\favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="common-styles.css">
     <link rel="stylesheet" href="menudesplegable.css">
     <style>
-
         body {
-            height: calc(2000px);
-            position: relative;
-            background-color: #ffffff;
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            height: calc(1000px);
+            width: calc(1200px);
+        }
+        .gallery {
+            z-index: 999;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+            gap: 15px; /* Espacio entre las imágenes */
+            width: calc(80% - 100px); /* Ancho total de la galería (restando 30px para el espacio del borde izquierdo) */
+            margin-top: calc(30%);
+            margin-left: 30px; /* Espacio del borde izquierdo */
+            padding: 0 20px; /* Agrega un espaciado lateral para centrar la grilla */
+            margin-bottom: calc(100%);
+        }
+        .gallery img {
+            z-index: 999;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            max-height: 150px; /* Altura máxima de la imagen */
+            transition: transform 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
+            border: 2px solid transparent; /* Borde inicial transparente */
+            margin: 0;
+            box-shadow: 0px 0px 30px #ffffff;
+        }
+
+        .game:hover img {
+        border-color: rgb(255, 250, 221); /* Color de borde al pasar el mouse */
+        margin: -2px;
+        transform: scale(1.1); /* Ajusta el valor según el efecto deseado */
+        }
+        .game-name {
+            z-index: 999;
+            font-family: "fuentedefault";
+            margin-top: 8px;
+            text-align: center; /* Alinea el texto al centro */
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.1s ease;
+        }
+
+        .game-name:hover {
+            color: #ff2a2a; /* Cambia el color del texto al pasar el cursor sobre él */
+        }
+
+        .numerodepagina {
+            position: absolute;
+            font-size: 15px;
+            margin-left: calc(37%);
+            margin-top: calc(99%);
+            z-index: 999;
         }
     </style>
 </head>
 <body>
     <header>
-
-
+        <div class="logo"><img src="recursos/logo_principal1.png"></div>
         <div class="header-texts">
             <a href="index.html" class="header-text">INICIO</a>
             <a href="juegospc.html" class="header-text">JUEGOS PC</a>
@@ -30,24 +80,57 @@
                 <div class="submenu">
                     <a href="Cromos.html">Cromos</a>
                     <a href="Ruleta.html">Ruleta</a>
-                    <a href="programas.html">Salon de la Fama</a>
+                    <a href="pro.html">Salon de la Fama</a>
                 </div>
             </div>
             <div class="dropdowns">
                 <a href="programas.html" class="header-text" id="header-text">PROGRAMAS/EMULADORES</a>
                 <div class="submenus">
-                    <a href="Estadisticas_de_Transmisiones.html">Estadisticas de Transmisiones</a>
-                    <a href="Novedades.html">Novedades</a>
+                    <a href="programas.html">PROGRAMAS</a>
+                    <a href="emuladores.html">EMULADORES</a>
                 </div>
             </div>
         </div>
-
     </header>
-
+    <div class="background0"></div>
+    <div class="background0b"></div>
+    <div class="background1">
+        <div class="gallery">
+            <div class="game">
+                <a href="Programas/programas_pages/page_1/Adobe Premiere Portable.html"><img src="programas/programas_recursos/premiere_portable.png" alt="Juego 1"></a>
+                <div><a href="Programas/programas_pages/page_1/Adobe Premiere Portable.html" class="game-name">Adobe Premiere Portable</a></div>
+            </div>
+            <div class="game">
+                <a href="Programas/programas_pages/page_1/Adobe Premiere Portable.html"><img src="Programas/programas_recursos/photoshop_portable.png" alt="Juego 1"></a>
+                <div><a href="Programas/programas_pages/page_1/Adobe Premiere Portable.html" class="game-name">Adobe Photoshop Portable</a></div>
+            </div>
+            <div class="game">
+                <a href="Programas/programas_pages/page_1/Adobe Premiere Portable.html"><img src="Programas/programas_recursos/after_effects.png" alt="Juego 1"></a>
+                <div><a href="Programas/programas_pages/page_1/Adobe Premiere Portable.html" class="game-name">Adobe Photoshop Portable</a></div>
+            </div>
+            <!-- Repite lo mismo para las demás imágenes -->
+        </div>
+        <div class="numerodepagina">
+            <p>1</p>
+        </div>
+    </div>
+    <div id="ad-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '4e162183b224b3b46a8c138f646f6aea',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/4e162183b224b3b46a8c138f646f6aea/invoke.js"></scr' + 'ipt>');
+        </script>
+        </div>
 
     
     
     <script src="menudesplegable.js" defer></script>
+    <script src="scriptfotos.js" defer></script>
 
 </body>
 </html>
