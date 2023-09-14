@@ -14,52 +14,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 1000px;
+            height: 1600px;
             width: 1200px;
         }
-        .gallery {
-            z-index: 999;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
-            gap: 15px; /* Espacio entre las imágenes */
-            width: calc(80% - 100px); /* Ancho total de la galería (restando 30px para el espacio del borde izquierdo) */
-            margin-top: calc(30%);
-            margin-left: 30px; /* Espacio del borde izquierdo */
-            padding: 0 20px; /* Agrega un espaciado lateral para centrar la grilla */
-            margin-bottom: calc(100%);
-        }
-        .gallery img {
-            z-index: 999;
-            border-radius: 10px;
-            width: 100%;
-            height: auto;
-            max-height: 150px; /* Altura máxima de la imagen */
-            transition: transform 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
-            border: 2px solid transparent; /* Borde inicial transparente */
-            margin: 0;
-            box-shadow: 0px 0px 30px #ffffff;
-        }
-
-        .game:hover img {
-        border-color: rgb(255, 250, 221); /* Color de borde al pasar el mouse */
-        margin: -2px;
-        transform: scale(1.1); /* Ajusta el valor según el efecto deseado */
-        }
-        .game-name {
-            z-index: 999;
-            font-family: "fuentedefault";
-            margin-top: 8px;
-            text-align: center; /* Alinea el texto al centro */
-            color: black;
-            cursor: pointer;
-            text-decoration: none;
-            transition: color 0.1s ease;
-        }
-
-        .game-name:hover {
-            color: #ff2a2a; /* Cambia el color del texto al pasar el cursor sobre él */
-        }
-        
     </style>
 </head>
 <body>
@@ -87,54 +44,72 @@
     </header>
     <div class="background0"></div>
     <div class="background0b"></div>
+    <div class="destacado_contenedor">
+            <div class="destacado_tittle">DESTACADO</div>
+            <img src="recursos/star.png" class="star_icon">
+        <div class="destacado_gallery">
+            <div class="game_destacado">
+                <a href="https://store.epicgames.com/en-US/p/spelldrifter"><img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Spelldrifter_FreeRangeGames_S1_2560x1440-352ef2771d0e47b849b948dc1299214c" alt="Juego 1"></a>
+                <div><a href="https://store.epicgames.com/en-US/p/spelldrifter" class="game-name_destacado">ESTAN REGALANDO SPELLDRIFTER PARA PC</a></div>
+            </div>
+            <div class="game_destacado">
+                <a href="juegos pc/page 1/fnaf1.html"><img src="recursos/video/miniatura.png" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/fnaf1.html" class="game-name_destacado">10 JUEGOS DE DESPLAZAMIENTO HORIZONTAL PARA ANDROID</a></div>
+            </div>
+        </div>    
+    </div>
+    <div class="latest_contenedor">
+        <div class="latest_tittle">ULTIMAS PUBLICACIONES</div>
+        <img src="recursos/latest.png" class="star_icon">
+    </div>
     <div class="background1">
         <div class="gallery">
             <div class="game">
-                <a href="juegos pc/page 1/fnaf1.html"><img src="juegos/fnaf1.jpg" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/fnaf1.html"><img src="juegos pc/pc_recursos/fnaf1.jpg" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/fnaf1.html" class="game-name">Five Nights At Freddy 1</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/fnaf2.html"><img src="juegos/fnaf2.jpg" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/fnaf2.html"><img src="juegos pc/pc_recursos/fnaf2.jpg" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/fnaf2.html" class="game-name">Five Nights At Freddy 2</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/fnaf3.html"><img src="juegos/fnaf3.jpg" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/fnaf3.html"><img src="juegos pc/pc_recursos/fnaf3.jpg" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/fnaf3.html" class="game-name">Five Nights At Freddy 3</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/fnaf4.html"><img src="juegos/fnaf4.jpg" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/fnaf4.html"><img src="juegos pc/pc_recursos/fnaf4.jpg" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/fnaf4.html" class="game-name">Five Nights At Freddy 4</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/limbo.html"><img src="juegos/limbo.webp" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/limbo.html"><img src="juegos pc/pc_recursos/limbo.webp" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/limbo.html" class="game-name">Limbo</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/fnaf_sister_location.html"><img src="juegos/fnaf_sister_location.webp" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/fnaf_sister_location.html"><img src="juegos pc/pc_recursos/fnaf_sister_location.webp" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/fnaf_sister_location.html" class="game-name">Five Nights At Freddy Sister Location</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/papers_please.html"><img src="juegos/papers_please.jpg" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/papers_please.html"><img src="juegos pc/pc_recursos/papers_please.jpg" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/papers_please.html" class="game-name">Papers Please</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/craft_the_world.html"><img src="juegos/craft_the_world.png" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/craft_the_world.html"><img src="juegos pc/pc_recursos/craft_the_world.png" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/craft_the_world.html" class="game-name">Craft the World</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/only_up.html"><img src="juegos/only_up.webp" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/only_up.html"><img src="juegos pc/pc_recursos/only_up.webp" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/only_up.html" class="game-name">Only Up</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/casttle_crasher.html"><img src="juegos/castle_crashers.webp" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/casttle_crasher.html"><img src="juegos pc/pc_recursos/castle_crashers.webp" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/casttle_crasher.html" class="game-name">Castle Crashers</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/hello_neighbor.html"><img src="juegos/hello_neighbor.webp" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/hello_neighbor.html"><img src="juegos pc/pc_recursos/hello_neighbor.webp" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/hello_neighbor.html" class="game-name">Hello Neighbor</a></div>
             </div>
             <div class="game">
-                <a href="juegos pc/page 1/among_us.html"><img src="juegos/among_us.png" alt="Juego 1"></a>
+                <a href="juegos pc/page 1/among_us.html"><img src="juegos pc/pc_recursos/among_us.png" alt="Juego 1"></a>
                 <div><a href="juegos pc/page 1/among_us.html" class="game-name">Among Us</a></div>
             </div>
             <!-- Repite lo mismo para las demás imágenes -->
@@ -153,7 +128,8 @@
         </script>
     </div>
 
-
+    
+    
     <script src="menudesplegable.js" defer></script>
     <script src="scriptfotos.js" defer></script>
 
