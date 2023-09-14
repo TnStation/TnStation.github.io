@@ -330,3 +330,134 @@ padding: 10px; /* Opcional: añadimos un espacio interno de 10px para que el tex
 .ofertas_texto:hover {
     color: #e74c3c;
 }
+
+.gallery {
+    z-index: 999;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 15px; /* Espacio entre las imágenes */
+    width: calc(80% - 100px); /* Ancho total de la galería (restando 30px para el espacio del borde izquierdo) */
+    margin-top: calc(50%);
+    margin-left: 30px; /* Espacio del borde izquierdo */
+    padding: 0 20px; /* Agrega un espaciado lateral para centrar la grilla */
+    margin-bottom: calc(100%);
+}
+.gallery img {
+    z-index: 999;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Altura máxima de la imagen */
+    transition: transform 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
+    border: 2px solid transparent; /* Borde inicial transparente */
+    margin: 0;
+    box-shadow: 0px 0px 30px #ffffff;
+}
+
+.game:hover img {
+border-color: rgb(255, 250, 221); /* Color de borde al pasar el mouse */
+margin: -2px;
+transform: scale(1.1); /* Ajusta el valor según el efecto deseado */
+}
+.game-name {
+    z-index: 999;
+    font-family: "fuentedefault";
+    margin-top: 8px;
+    text-align: center; /* Alinea el texto al centro */
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+.game-name:hover {
+    color: #ff2a2a; /* Cambia el color del texto al pasar el cursor sobre él */
+}
+
+.destacado_contenedor {
+    height: 1000px;
+    width: 1200px;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 999;
+    margin-left: 52px;
+}
+
+.destacado_tittle {
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-family: "fuentedefault";
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-left: 44px;
+}
+
+.star_icon {
+    display: flex;
+    align-items: center;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.destacado_gallery {
+    z-index: 999;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 45px; /* Espacio entre las imágenes */
+    width: calc(104%);
+    gap: 50px; /* Espacio entre las imágenes */
+    margin-top: calc(2%);
+    margin-bottom: calc(100%);
+}
+
+.destacado_gallery img{
+    z-index: 999;
+    border-radius: 1px;
+    width: 110%;
+    height: auto;
+    max-height: 300px; /* Altura máxima de la imagen */
+    transition: transform 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
+    margin: 0;
+    box-shadow: 0px 0px 10px #fb82ffa1;
+}
+
+.game_destacado:hover img {
+border-color: rgba(194, 135, 178, 0.658); /* Color de borde al pasar el mouse */
+box-shadow: 0px 0px 5px #fb82ff;
+margin: 0px;
+transform: scale(1.06); /* Ajusta el valor según el efecto deseado */
+}
+
+.game-name_destacado {
+    z-index: 999;
+    font-family: "fuentedefault";
+    margin-top: 150px;
+    text-align: center; /* Alinea el texto al centro */
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease;
+    font-size: 18px;
+}
+
+.game-name_destacado:hover {
+    color: #f84c4c; /* Cambia el color del texto al pasar el cursor sobre él */
+}
+
+.latest_contenedor {
+    margin-top: 540px;
+    position: absolute;
+    z-index: 999;
+    margin-left: 52px;
+}
+.latest_tittle {
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-family: "fuentedefault";
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-left: 44px;
+    white-space: nowrap;
+}
