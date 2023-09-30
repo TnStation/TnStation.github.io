@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TnStation Page 2</title>
+    <link rel="icon" href="Imagenes\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../common-styles.css">
+    <link rel="stylesheet" href="../../menudesplegable.css">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: calc(1000px);
+            width: calc(1200px);
+        }
+        .gallery {
+            z-index: 999;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+            gap: 15px; /* Espacio entre las imágenes */
+            width: calc(80% - 100px); /* Ancho total de la galería (restando 30px para el espacio del borde izquierdo) */
+            margin-top: calc(30%);
+            margin-left: 30px; /* Espacio del borde izquierdo */
+            padding: 0 20px; /* Agrega un espaciado lateral para centrar la grilla */
+            margin-bottom: calc(100%);
+        }
+        .gallery img {
+            z-index: 999;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            max-height: 150px; /* Altura máxima de la imagen */
+            transition: transform 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
+            border: 2px solid transparent; /* Borde inicial transparente */
+            margin: 0;
+            box-shadow: 0px 0px 30px #ffffff;
+        }
+
+        .game:hover img {
+        border-color: rgb(255, 250, 221); /* Color de borde al pasar el mouse */
+        margin: -2px;
+        transform: scale(1.1); /* Ajusta el valor según el efecto deseado */
+        }
+        .game-name {
+            z-index: 999;
+            font-family: "fuentedefault";
+            margin-top: 8px;
+            text-align: center; /* Alinea el texto al centro */
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.1s ease;
+        }
+
+        .game-name:hover {
+            color: #ff2a2a; /* Cambia el color del texto al pasar el cursor sobre él */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../../recursos/logo_principal1.png"></div>
+        <div class="header-texts">
+            <a href="../../index.html" class="header-text">INICIO</a>
+            <a href="../../juegospc.html" class="header-text">JUEGOS PC</a>
+            <div class="dropdown">
+                <a href="../../juegosandroid.html" class="header-text">JUEGOS ANDROID</a>
+                <div class="submenu">
+                    <a href="Cromos.html">Cromos</a>
+                    <a href="Ruleta.html">Ruleta</a>
+                    <a href="pro.html">Salon de la Fama</a>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <a href="../programas.html" class="header-text" id="header-text">PROGRAMAS/EMULADORES</a>
+                <div class="submenus">
+                    <a href="programas.html">PROGRAMAS</a>
+                    <a href="emuladores.html">EMULADORES</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="background0"></div>
+    <div class="background0b"></div>
+    <div class="background1">
+        <div class="gallery">
+            <div class="game">
+                <a href="juegos pc/page 1/fnaf1.html"><img src="../../juegos pc/pc_recursos/fnaf1.jpg" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/fnaf1.html" class="game-name">Five Nights At Freddy 1</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/fnaf2.html"><img src="../../juegos pc/pc_recursos/fnaf2.jpg" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/fnaf2.html" class="game-name">Five Nights At Freddy 2</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/fnaf3.html"><img src="../../juegos pc/pc_recursos/fnaf3.jpg" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/fnaf3.html" class="game-name">Five Nights At Freddy 3</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/fnaf4.html"><img src="../../juegos pc/pc_recursos/fnaf4.jpg" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/fnaf4.html" class="game-name">Five Nights At Freddy 4</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/limbo.html"><img src="../../juegos pc/pc_recursos/limbo.webp" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/limbo.html" class="game-name">Limbo</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/fnaf_sister_location.html"><img src="../../juegos pc/pc_recursos/fnaf_sister_location.webp" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/fnaf_sister_location.html" class="game-name">Five Nights At Freddy Sister Location</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/papers_please.html"><img src="../../juegos pc/pc_recursos/papers_please.jpg" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/papers_please.html" class="game-name">Papers Please</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/craft_the_world.html"><img src="../../juegos pc/pc_recursos/craft_the_world.png" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/craft_the_world.html" class="game-name">Craft the World</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/only_up.html"><img src="../../juegos pc/pc_recursos/only_up.webp" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/only_up.html" class="game-name">Only Up</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/casttle_crasher.html"><img src="../../juegos pc/pc_recursos/castle_crashers.webp" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/casttle_crasher.html" class="game-name">Castle Crashers</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/hello_neighbor.html"><img src="../../juegos pc/pc_recursos/hello_neighbor.webp" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/hello_neighbor.html" class="game-name">Hello Neighbor</a></div>
+            </div>
+            <div class="game">
+                <a href="juegos pc/page 1/among_us.html"><img src="../../juegos pc/pc_recursos/among_us.png" alt="Juego 1"></a>
+                <div><a href="juegos pc/page 1/among_us.html" class="game-name">Among Us</a></div>
+            </div>
+            <!-- Repite lo mismo para las demás imágenes -->
+        </div>
+        <div class="numerodepagina_contenedor">
+            <span class="current-page" class="numerodepagina">1</span>
+            <a href="../../juegos pc/page 2/page_2.html" class="numerodepagina">2</a>
+            <a href="Android/juegos android/page 3/page_3.html" class="numerodepagina">-</a>
+            <a href="Android/juegos android/page 4/page_4.html" class="numerodepagina">-</a>
+            <span>&hellip;</span>
+            <!-- Puedes continuar agregando más números de página si es necesario -->
+        </div>
+    </div>
+    <div id="ad-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '4e162183b224b3b46a8c138f646f6aea',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/4e162183b224b3b46a8c138f646f6aea/invoke.js"></scr' + 'ipt>');
+        </script>
+        </div>
+
+    
+    
+    <script src="menudesplegable.js" defer></script>
+    <script src="scriptfotos.js" defer></script>
+
+</body>
+</html>
